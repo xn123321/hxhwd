@@ -15,6 +15,7 @@ const itemList = [
 
 class Home extends React.Component {
   constructor(props) {
+    console.log(props);
     super(props)
     this.state = {
       // 默认选中的高亮
@@ -76,7 +77,7 @@ class Home extends React.Component {
     </TabBar.Item>
     )
   }
-
+  // 操作更新后的内容
   componentDidUpdate(prevProps) {
     console.log(prevProps)
     console.log('home组件更新了')
